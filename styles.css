@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack the children of body vertically */
+    justify-content: center; /* Vertically center the children */
+    align-items: center; /* Horizontally center the children */
+    height: 100vh; /* Take the full viewport height */
+    background-color: #FF9AA2;
+    margin: 0;
+    padding: 0;
+}
+
+.countdown-wrapper {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 3px solid #FFFFFF;
+    padding: 30px 50px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px; /* Add a bit of space between the countdown and description */
+}
+
+.time-box {
+    padding: 20px;
+    background-color: #ffcff7;
+    color: #680009;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+}
+
+.event-description {
+    color: #FFFFFF;
+    font-size: 18px;
+}
