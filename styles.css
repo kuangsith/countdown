@@ -13,6 +13,7 @@ body {
 .countdown-wrapper {
     margin: 30px;
     display: flex;
+    flex-direction: column; /* Stack the time boxes vertically for mobile screens */
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -30,9 +31,27 @@ body {
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     font-size: 24px;
+    text-align: center;
+    width: 60%; /* set to a percentage so it adjusts to screen size */
 }
 
 .event-description {
     color: #FFFFFF;
     font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Media Query for screens larger than 600px */
+@media screen and (min-width: 600px) {
+    .countdown-wrapper {
+        flex-direction: row; /* Display time boxes horizontally for larger screens */
+        justify-content: center;
+        gap: 30px; /* Increase the gap a bit for larger screens */
+    }
+
+    .time-box {
+        width: auto; /* Reset the width */
+        padding: 20px; /* Increase the padding for larger screens */
+    }
 }
